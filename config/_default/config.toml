@@ -6,7 +6,7 @@ enableGitInfo = true
 # toml-docs-end main
 
 # additional settings
-baseURL = "https://hinode-demo.markdumay.org/"
+baseURL = "/"
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true
@@ -31,20 +31,20 @@ defaultContentLanguageInSubdir = true
 
 [privacy]
   [privacy.vimeo]
-    disabled = false
+    disabled = true
     simple = true
 
   [privacy.twitter]
-    disabled = false
+    disabled = true
     enableDNT = true
     simple = true
 
   [privacy.instagram]
-    disabled = false
+    disabled = true
     simple = true
 
   [privacy.youtube]
-    disabled = false
+    disabled = true
     privacyEnhanced = true
 
 [services]
