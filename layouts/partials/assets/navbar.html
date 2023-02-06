@@ -145,25 +145,6 @@
                 {{ end -}}
 
                 <!-- Insert language switcher if applicable -->
-                {{ if or $page.IsTranslated site.IsMultiLingual }}
-                    {{ $currentLang := $page.Language.Lang }}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-globe"></i> {{ T "languageSwitcherLabel" }}
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end ">
-                            {{ if $page.IsTranslated -}}
-                                {{ range $page.AllTranslations -}}
-                                    <li><a class="dropdown-item {{ if eq .Language.Lang $currentLang }}active{{ end }}" href="{{ .Permalink }}">{{ .Language.LanguageName  }}</a></li>
-                                {{ end -}}
-                            {{ else -}}
-                                {{ range site.Languages -}}
-                                    <li><a class="dropdown-item" href="/{{ .Lang }}">{{ default .Lang .LanguageName }}</a></li>
-                                {{ end -}}
-                            {{ end -}}
-                        </ul>
-                    </li>
-                {{ end -}}
             </ul>
         </div>
     </div>
