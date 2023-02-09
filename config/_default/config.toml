@@ -1,8 +1,8 @@
 # toml-docs-start main
-title = "Hinode"
-copyright = "Copyright © 2023 Mark Dumay."
+title = "Stargate Cre8"
+copyright = "Copyright © 2023 Stargate."
 paginate = 9
-enableGitInfo = true
+enableGitInfo = false
 # toml-docs-end main
 
 # additional settings
