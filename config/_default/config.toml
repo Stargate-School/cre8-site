@@ -26,6 +26,9 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 # toml-docs-end language
 
+[permalinks]
+    blog = '/:year/:month/:title/'
+
 [taxonomies]
   tag = 'tags'
 
