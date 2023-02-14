@@ -1,17 +1,17 @@
 # toml-docs-start main
 [main]
     separator = "-"
-    description = "Stargate Cre8"
+    description = "Home"
 # toml-docs-end main
 
 # toml-docs-start docs
-[docs]
-    version = "0.8"
+# [docs]
+#     version = "0.8"
 # toml-docs-end docs
 
 # toml-docs-start home
 [home]
-    sections = ["blog", "projects"]
+    sections = ["blog"]
     featurePhoto = "/img/sunrise.jpg" # source: https://unsplash.com/photos/ZX6BPboJrYk
     fullCover = false
 # toml-docs-end home
@@ -32,7 +32,7 @@
 # toml-docs-start list
 [list]
     [blog]
-        title = "Blog"
+        title = "Latest Projects"
         sort = "date"
         reverse = false
         cols = 3
@@ -43,18 +43,19 @@
         orientation = "stacked"
         style = "border-0"
         homepage = 3
-    [projects]
-        title = "Projects"
-        sort = "title"
-        reverse = false
-        cols = 1
-        color = ""
-        padding = "3"
-        header = "none"
-        footer = "tags"
-        orientation = "none"
-        style = "border-1 card-emphasize"
-        homepage = 3
+    # Disable builtin Projects
+    # [projects]
+    #     title = "Projects"
+    #     sort = "title"
+    #     reverse = false
+    #     cols = 1
+    #     color = ""
+    #     padding = "3"
+    #     header = "none"
+    #     footer = "tags"
+    #     orientation = "none"
+    #     style = "border-1 card-emphasize"
+    #     homepage = 3
 # toml-docs-end list
 
 [favicon]
