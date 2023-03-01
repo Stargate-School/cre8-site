@@ -7,11 +7,13 @@
         {{ $datestr := (partial "utilities/date.html" (dict "date" .Date "format" "long")) -}}
         <h1>{{ .Title }}</h1>
         <small class="text-muted text-uppercase">
+            {{ if .Params.author }}
+              BY {{ .Params.author }}&nbsp;&bull;
+            {{ end }}
             {{ $datestr | i18n "postedOnDate" -}}
             {{ if ne $datestr $lastmodstr -}}&nbsp;({{ $lastmodstr | i18n "lastModified" }}){{ end }} &bull;
             {{ .ReadingTime | lang.FormatNumber 0 }}&nbsp;{{ i18n "minutesShort" }} {{ i18n "read" }} &bull;
-            {{ .WordCount | lang.FormatNumber 0 }}&nbsp;{{ i18n "words" }} &bull;
-            BY {{ .Params.author }}
+            {{ .WordCount | lang.FormatNumber 0 }}&nbsp;{{ i18n "words" }}
         </small>
 
         <div class="mt-3">
