@@ -45,7 +45,10 @@
 
     <p class="card-text"><small class="{{ if $color }}text-bg-{{ $color }}{{ else }}text-muted{{ end }} text-uppercase">
       
-        {{ with $page.Params.author }}{{ . }}&nbsp;&bull;{{ end }}
+        <!-- Add author attribute -->
+        {{ if $page.Params.author }}
+          BY {{ $page.Params.author }}&nbsp;&bull;
+        {{ end }}
 
         {{ if in (slice "full" "publication") $keywords -}}
             {{ partial "utilities/date.html" (dict "date" $page.Date "format" "long") -}}&nbsp;&bull;
@@ -160,7 +163,6 @@
         <div class="card-body d-flex flex-column p-{{ $padding }}">
             {{ partial "card-caption.html" (dict "page" $page "keywords" $header "color" $color) }}                    
             {{ partial "card-body.html" (dict "title" $title "href" $href "color" $color "description" $description) }}
-            {{ partial "card-caption.html" (dict "page" $page "keywords" $footer "color" $color) }}                    
         </div>
     </div>
 {{ end -}}
