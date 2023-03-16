@@ -1,4 +1,4 @@
 ---
-author: Mark Dumay
-title: A Clean Theme for Hugo
+author: Stargate
+title: Stargate Cre8
 ---
