@@ -4,7 +4,7 @@ title: "Yet Another Example Project"
 date: 2023/03/06
 description: "My fellow Americans..."
 tags: ["Poetry, Code"]
-thumbnail: "img/Bn0WcmRJ9AQAnmhYIe4kX3Ef.webp"
+thumbnail: "img/yHQMuWI9eoAlq0ae8kpw70Si.webp"
 ---
 
 Ratione et dolor autem minima culpa qui. Ipsum voluptatem in illum sint vel. Est laudantium praesentium doloribus. Earum nihil porro nisi voluptate assumenda adipisci.
