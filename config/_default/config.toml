@@ -6,7 +6,7 @@ enableGitInfo = false
 # toml-docs-end main
 
 # additional settings
-baseURL = "/"
+baseURL = "/cre8-site/"
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true
