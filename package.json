@@ -68,7 +68,7 @@
     "rimraf": "^4.1.2",
     "shx": "^0.3.4",
     "stylelint": "^15.1.0",
-    "stylelint-config-standard-scss": "^7.0.1"
+    "stylelint-config-standard-scss": "^9.0.0"
   },
   "otherDependencies": {
     "hugo": "0.110.0"
